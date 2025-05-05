@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import Header from "@/components/Header";
+import About from "@/components/About";
 
 import { FloatingDock } from "@/components/ui/floating-dock";
 import { FaHome } from "react-icons/fa";
@@ -11,6 +12,7 @@ export default function Home() {
       <div>
         <Header/>
         <Hero/>
+        <About/>
       </div>
     </main>
   );

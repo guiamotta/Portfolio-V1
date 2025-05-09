@@ -23,7 +23,7 @@ const certificationCard: React.FC<certificationCardProps> = ({ title, organizati
           <p>{organization}</p>
           <p>{year}</p>
         </div>
-        <div className="w-[30%] h-full overflow-hidden m-5">
+        <div className="w-[50%] h-full overflow-hidden">
           <img src={logo} className="w-full h-full object-cover" alt={`${organization} logo`} />
         </div>
       </div>

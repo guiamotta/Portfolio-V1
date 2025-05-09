@@ -23,7 +23,7 @@ const EducationCard: React.FC<EducationCardProps> = ({ university, degree, perio
           <p>{degree}</p>
           <p>{period}</p>
         </div>
-        <div className="w-[30%] h-full overflow-hidden m-5">
+        <div className="w-[50%] h-full overflow-hidden">
           <img src={logo} className="w-full h-full object-cover" alt={`${university} logo`} />
         </div>
       </div>

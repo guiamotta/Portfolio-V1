@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <div id="home" className="relative w-full h-screen overflow-hidden">
       {/* background */}
-      <div className="absolute top-0 left-0 w-full h-full z-0">
+      <div className="absolute w-full h-full z-0">
         <Vortex particleCount={100} rangeY={350} />
       </div>
 
@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="relative flex flex-col justify-center items-center text-center h-full z-10 gap-7 p-4">
         {/* name and description */}
         <div className="flex flex-col gap-5">
-          <h1 className="text-white text-6xl font-bold">Guilherme A. Motta</h1>
+          <h1 className="text-white text-4xl sm:text-6xl font-bold">Guilherme A. Motta</h1>
           <TypewriterEffect
             words={description}
             cursorClassName="bg-[rgb(228,0,122)] w-[5px]"
@@ -30,15 +30,12 @@ const Hero = () => {
         </div>
 
         {/* buttons */}
-        <div className="flex flex-col justify-between gap-4 sm:flex-row">
+        <div className="flex flex-row justify-between gap-4">
           <a
             href="https://www.linkedin.com/in/guilherme-amaral-motta/"
             target="_blank"
           >
             <BordersButton title="LinkedIn" />
-          </a>
-          <a href="#about">
-            <BordersButton title="Currículo" />
           </a>
           <a
             href="https://github.com/guiamotta"

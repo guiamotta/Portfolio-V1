@@ -15,16 +15,14 @@ const Header = () => {
         <a href="#home" className="text-[rgb(228,0,122)] text-3xl font-bold">guiamotta</a>
 
         {/* sections */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden sm:flex space-x-6">
           <a href="#home" className="hover:text-[rgb(228,0,122)] transition-colors">Home</a>
           <a href="#about" className="hover:text-[rgb(228,0,122)] transition-colors">About</a>
-          <a href="#education" className="hover:text-[rgb(228,0,122)] transition-colors">Education</a>
           <a href="#projects" className="hover:text-[rgb(228,0,122)] transition-colors">Projects</a>
-          <a href="#contact" className="hover:text-[rgb(228,0,122)] transition-colors">Contact</a>
         </div>
 
         {/* burger icon */}
-        <div className="relative md:hidden">
+        <div className="relative sm:hidden">
           <div className="flex flex-col space-y-1 cursor-pointer group"onClick={toggleMenu}>
             <div className={`w-6 h-0.5 transition-colors ${isMobileMenuOpen ? 'bg-[rgb(228,0,122)]' :
               'group-hover:bg-[rgb(228,0,122)] bg-white'}`}></div>
@@ -41,10 +39,8 @@ const Header = () => {
                   onClick={() => setIsMobileMenuOpen(false)}>Home</a></li>
                 <li><a href="#about" className="hover:text-[rgb(228,0,122)] transition-colors" 
                   onClick={() => setIsMobileMenuOpen(false)}>About</a></li>
-                <li><a href="#portfolio" className="hover:text-[rgb(228,0,122)] transition-colors" 
+                <li><a href="#projects" className="hover:text-[rgb(228,0,122)] transition-colors" 
                   onClick={() => setIsMobileMenuOpen(false)}>Projects</a></li>
-                <li><a href="#contact" className="hover:text-[rgb(228,0,122)] transition-colors" 
-                  onClick={() => setIsMobileMenuOpen(false)}>Contact</a></li>
               </ul>
             </nav>
           )}

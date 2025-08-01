@@ -1,33 +1,34 @@
 import React from 'react'
 
-type projectCardProps = {
-  title: string
+type ProjectCardProps = {
+  name: string
   description: string
+  year: string
   image: string
   link: string
 }
 
-const projectCard: React.FC<projectCardProps> = ({ title, description, image, link }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({name, description, year, image, link }) => {
   return (
     <a
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="cursor-pointer"
+      className="w-full cursor-pointer"
     >
-      <div className="flex flex-col items-center justify-between text-center
-      bg-indigo-500/70 text-black hover:bg-indigo-500
-      rounded-2xl w-75 h-75 overflow-hidden">
-        <div className="flex flex-col justify-center items-center flex-1 px-4">
-          <h4 className="text-2xl font-bold mt-3">{title}</h4>
-          <p>{description}</p>
+      <div className="flex flex-col md:flex-row items-center justify-between rounded-2xl bg-[rgba(87,0,228,0.7)] text-black hover:bg-[rgb(87,0,228)] text-center w-full overflow-hidden h-64">
+        <img src="icon.svg" className="w-10 h-10 m-5 hidden md:block" alt="Graduation icon" />
+        <div className="flex-1 px-4 text-center md:text-left">
+          <h4 className="text-5xl font-bold mt-5 md:mt-0">{name}</h4>
+          <p className="font-bold">{description}</p>
+          <p>{year}</p>
         </div>
-        <div className="w-[90%] rounded-2xl overflow-hidden m-5">
-          <img src={image} className="w-full h-full object-cover" alt={`${title}`} />
+        <div className="w-full md:w-[50%] h-full overflow-hidden">
+          <img src={image} className="w-full h-full object-cover p-2 rounded-2xl" alt={`${name} logo`} />
         </div>
       </div>
     </a>
   )
 }
 
-export default projectCard
+export default ProjectCard

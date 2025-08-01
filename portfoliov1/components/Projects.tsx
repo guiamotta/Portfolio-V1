@@ -8,24 +8,26 @@ const Projects = () => {
       <div className="flex flex-col gap-5 w-full">
 
         <h3 className="text-center text-[rgb(228,0,122)] text-5xl font-bold mt-20">Projects</h3>
-        <div className="flex flex-row justify-center items-center gap-20">
-
+        <div className="flex flex-wrap justify-center gap-10">
           {/* project cards */}
           <ProjectCard
-          title="Portfolio"
+          name="Portfolio"
           description="Website created with React|Next.js|Tailwind"
+          year="2025"
           image="project1.png"
           link="https://github.com/guiamotta/portfoliov1/"
           />
           <ProjectCard
-          title="Portfolio"
+          name="Portfolio"
           description="Website created with React|Next.js|Tailwind"
+          year="2025"
           image="project1.png"
           link="https://github.com/guiamotta/portfoliov1/"
           />
           <ProjectCard
-          title="Portfolio"
+          name="Portfolio"
           description="Website created with React|Next.js|Tailwind"
+          year="2025"
           image="project1.png"
           link="https://github.com/guiamotta/portfoliov1/"
           />

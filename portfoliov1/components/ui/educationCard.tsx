@@ -16,9 +16,9 @@ const EducationCard: React.FC<EducationCardProps> = ({ university, degree, perio
       rel="noopener noreferrer"
       className="w-full cursor-pointer"
     >
-      <div className="flex flex-row items-center justify-between rounded-2xl bg-[rgba(228,0,122,0.7)] text-black hover:bg-[rgb(228,0,122)] text-center w-full overflow-hidden h-32">
-        <img src="graduation-icon.svg" className="w-10 h-10 m-5" alt="Graduation icon" />
-        <div className="flex-1 px-4 text-left">
+      <div className="flex flex-col sm:flex-row items-center justify-between rounded-2xl bg-[rgba(228,0,122,0.7)] text-black hover:bg-[rgb(228,0,122)] text-center w-full overflow-hidden h-50 sm:h-32">
+        <img src="graduation-icon.svg" className="w-10 h-10 m-5 hidden sm:visible" alt="Graduation icon" />
+        <div className="flex-1 px-4 text-center sm:text-left">
           <h4 className="text-xl font-bold">{university}</h4>
           <p>{degree}</p>
           <p>{period}</p>
